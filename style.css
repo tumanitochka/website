@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Pacifico", cursive !important;
+    font-weight: lighter;
+}
+
+header, footer {
+    padding: 20px 40px;
+    background-color: brown;
+    color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    flex: auto;
+    padding: 20px 40px;
+}
+
+article {
+    width: 100%;
+        
+    padding: 10px;
+    background-color: brown;
+    color: wheat;
+    display: flex;
+    gap: 20px;
+}
+
+article img {
+    height: 100%;
+}
+
+article h2 {
+    font-size: 42px;
+}
+
+article p {
+    font-size: 26px;
+}
+
+article button {
+    padding: 10px 20px;
+    background-color: wheat;
+    border: none;
+    cursor: pointer;
+}
+
+.article_game {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.exit {
+    background-color: brown;
+    padding: 20px 40px;
+    color: wheat;
+    font-size: 16px;
+    border: none;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    background-color: wheat;
+    color: brown;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.menu, input {
+    display: none;
+}
+
+input:checked ~ .menu {
+    display: flex;
+}
+
+.menu {
+    flex-direction: column;
+    position: absolute;
+    top: 4rem;
+    gap: 20px;
+    list-style: none;
+    left: 9rem;
+    background-color: #ff0000b6;
+    padding: 20px;
+}
+
+nav { position: relative; }
+label { cursor: pointer; }
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.carousel {
+    height: 400px !important;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    object-fit: cover;
+}
